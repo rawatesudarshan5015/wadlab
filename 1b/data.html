@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data List</title>
+</head>
+<body>
+  <h1>User Data List</h1>
+  <h1 id="fullName"></h1>
+  <h1 id="email"></h1>
+  <h1 id="password"></h1>
+
+  <script>
+    // Get user data from local storage
+    const usersData = JSON.parse(localStorage.getItem('users')) ;
+    
+    const fullname = document.getElementById("fullName")
+    const email = document.getElementById("email")
+    const password = document.getElementById("password")
+
+    fullName.innerHTML = usersData.fullName
+    email.innerHTML = usersData.email
+    password.innerHTML = usersData.password
+  </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Custom styles */
+.sidebar {
+    background-color: #f8f9fa; /* Sidebar background color */
+    height: 100vh; /* Full height */
+    padding: 20px;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
